@@ -1,54 +1,54 @@
 [
   {
     "id": 1001,
-    "title": "часы на ручные!",
+    "title": "Стильные наручные часы Classic",
     "price": 15.99,
-    "description": "часы на ручные!",
+    "description": "Удобные и элегантные часы для повседневного использования. Подойдут к любому стилю одежды.",
     "category": "jokes",
     "image": "https://picsum.photos/seed/socks42/400/400",
     "rating": { "rate": 4.2, "count": 87 }
   },
   {
     "id": 1002,
-    "title": "Сувенирные камни из гранд каньёна!",
+    "title": "Сувенирные декоративные камни Grand Canyon",
     "price": 42.5,
-    "description": "Сувенирные камни из гранд каньёна!",
+    "description": "Красивые декоративные камни для коллекции, интерьера или в качестве необычного подарка.",
     "category": "jokes",
     "image": "https://picsum.photos/seed/keyboard42/400/400",
     "rating": { "rate": 4.8, "count": 231 }
   },
   {
     "id": 1003,
-    "title": "Развестное какао!",
+    "title": "Растворимое какао Premium",
     "price": 9.99,
-    "description": "Развестное какао!",
+    "description": "Вкусный шоколадный напиток, который легко приготовить. Отлично подходит для завтрака и уютных вечеров.",
     "category": "jokes",
     "image": "https://picsum.photos/seed/mug42/400/400",
     "rating": { "rate": 4.5, "count": 156 }
   },
   {
     "id": 1004,
-    "title": "баклашки 5л воды",
+    "title": "Питьевая вода 5 литров",
     "price": 19.99,
-    "description": "баклашки 5л воды",
+    "description": "Чистая питьевая вода в удобной пятилитровой бутылке. Подходит для дома, офиса и поездок.",
     "category": "jokes",
     "image": "https://picsum.photos/seed/tshirt42/400/400",
     "rating": { "rate": 4.9, "count": 340 }
   },
   {
     "id": 1005,
-    "title": "Обои Для Стен!",
+    "title": "Декоративные обои для стен Modern",
     "price": 2.5,
-    "description": "Обои Для Стен!",
+    "description": "Стильные обои для обновления интерьера. Просты в уходе и подходят для разных помещений.",
     "category": "jokes",
     "image": "https://picsum.photos/seed/sticker42/400/400",
     "rating": { "rate": 4.3, "count": 98 }
   },
   {
     "id": 1006,
-    "title": "Набор красивых очков",
+    "title": "Набор стильных очков (3 пары)",
     "price": 24.99,
-    "description": "Набор красивых очков",
+    "description": "Комплект современных очков для разных образов. Отличный выбор для повседневного использования и отдыха.",
     "category": "jokes",
     "image": "https://picsum.photos/seed/bugtoy42/400/400",
     "rating": { "rate": 4.7, "count": 120 }
