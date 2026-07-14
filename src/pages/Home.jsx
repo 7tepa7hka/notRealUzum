@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import ProductCard from "../components/ProductCard.jsx";
-import ProductModal from "../components/ProductModal.jsx";
+import ProductModal from "../components/Productmodal.jsx";
 import Banner from "../components/Banner.jsx";
 import { useSearch } from "../context/SearchContext.jsx";
 import { getAllProducts } from "../utils/getProducts.js";

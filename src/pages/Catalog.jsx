@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import ProductCard from "../components/ProductCard";
-import ProductModal from "../components/ProductModal.jsx";
+import ProductModal from "../components/Productmodal.jsx";
 import { getAllProducts } from "../utils/getProducts.js";
 import "./Catalog.css";
 
