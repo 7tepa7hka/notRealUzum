@@ -1,0 +1,37 @@
+:root {
+  --violet: #6b21e8;
+  --violet-light: #8b3ff0;
+  --bg: #f5f5fa;
+  --text-dark: #1a1a1a;
+  --text-gray: #6b6b6b;
+  --white: #ffffff;
+  --border: #e5e5ee;
+}
+
+[data-theme="dark"] {
+  --bg: #15151c;
+  --text-dark: #f0f0f5;
+  --text-gray: #a0a0b0;
+  --white: #1e1e28;
+  --border: #2e2e3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

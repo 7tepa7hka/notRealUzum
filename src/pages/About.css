@@ -1,0 +1,46 @@
+.about {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.about__updated {
+  color: var(--text-gray);
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.about__section {
+  margin-bottom: 22px;
+}
+
+.about__section h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--violet);
+}
+
+.about__section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.about__stack {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about__footer {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-gray);
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+.checkout-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 200;
+}
+
+.checkout-modal {
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  max-width: 380px;
+  width: 100%;
+  padding: 28px;
+}
+
+.checkout-modal h2 {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.checkout-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg);
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.checkout-modal__input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-dark);
+  font-size: 14px;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.checkout-modal__submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--violet);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.checkout-modal__submit:hover {
+  background: var(--violet-light);
+}

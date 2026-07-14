@@ -1,0 +1,49 @@
+.catalog__title {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.catalog__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.catalog__filter {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--text-gray);
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.catalog__filter:hover {
+  border-color: var(--violet);
+}
+
+.catalog__filter--active {
+  background: var(--violet);
+  border-color: var(--violet);
+  color: var(--white);
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.catalog__status {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-gray);
+  font-size: 15px;
+}

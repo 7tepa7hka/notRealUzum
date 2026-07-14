@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1001,
+    "title": "часы на ручные!",
+    "price": 15.99,
+    "description": "часы на ручные!",
+    "category": "jokes",
+    "image": "https://picsum.photos/seed/socks42/400/400",
+    "rating": { "rate": 4.2, "count": 87 }
+  },
+  {
+    "id": 1002,
+    "title": "Сувенирные камни из гранд каньёна!",
+    "price": 42.5,
+    "description": "Сувенирные камни из гранд каньёна!",
+    "category": "jokes",
+    "image": "https://picsum.photos/seed/keyboard42/400/400",
+    "rating": { "rate": 4.8, "count": 231 }
+  },
+  {
+    "id": 1003,
+    "title": "Развестное какао!",
+    "price": 9.99,
+    "description": "Развестное какао!",
+    "category": "jokes",
+    "image": "https://picsum.photos/seed/mug42/400/400",
+    "rating": { "rate": 4.5, "count": 156 }
+  },
+  {
+    "id": 1004,
+    "title": "баклашки 5л воды",
+    "price": 19.99,
+    "description": "баклашки 5л воды",
+    "category": "jokes",
+    "image": "https://picsum.photos/seed/tshirt42/400/400",
+    "rating": { "rate": 4.9, "count": 340 }
+  },
+  {
+    "id": 1005,
+    "title": "Обои Для Стен!",
+    "price": 2.5,
+    "description": "Обои Для Стен!",
+    "category": "jokes",
+    "image": "https://picsum.photos/seed/sticker42/400/400",
+    "rating": { "rate": 4.3, "count": 98 }
+  },
+  {
+    "id": 1006,
+    "title": "Набор красивых очков",
+    "price": 24.99,
+    "description": "Набор красивых очков",
+    "category": "jokes",
+    "image": "https://picsum.photos/seed/bugtoy42/400/400",
+    "rating": { "rate": 4.7, "count": 120 }
+  }
+]

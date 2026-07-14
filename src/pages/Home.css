@@ -1,0 +1,17 @@
+.home__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.home__status {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-gray);
+  font-size: 15px;
+}
