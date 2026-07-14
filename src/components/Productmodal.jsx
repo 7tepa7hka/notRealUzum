@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useCart } from "../context/CartContext.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
-import "./ProductModal.css";
+import "./Productmodal.css";
 
 function ProductModal({ product, onClose }) {
   const { addToCart } = useCart();
