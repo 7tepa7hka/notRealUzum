@@ -6,6 +6,7 @@ import { SearchProvider } from "./context/SearchContext.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
+import { CityProvider } from "./context/CityContext.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -13,11 +14,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <ThemeProvider>
         <LanguageProvider>
-          <SearchProvider>
-            <CartProvider>
-              <App />
-            </CartProvider>
-          </SearchProvider>
+          <CityProvider>
+            <SearchProvider>
+              <CartProvider>
+                <App />
+              </CartProvider>
+            </SearchProvider>
+          </CityProvider>
         </LanguageProvider>
       </ThemeProvider>
     </BrowserRouter>

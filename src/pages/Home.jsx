@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import ProductCard from "../components/ProductCard.jsx";
-import ProductModal from "../components/Productmodal.jsx";
 import Banner from "../components/Banner.jsx";
 import { useSearch } from "../context/SearchContext.jsx";
-import { getAllProducts } from "../utils/getProducts.js";
+import { useLanguage } from "../context/LanguageContext.jsx";
+import { getAllProducts, localizeProduct } from "../utils/getProducts.js";
 import "./Home.css";
 
 function Home() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const { searchTerm } = useSearch();
+  const { lang } = useLanguage();
 
   useEffect(() => {
     getAllProducts()
@@ -20,24 +20,15 @@ function Home() {
         setLoading(false);
       })
       .catch(() => {
-        toast.error("Не удалось загрузить товары 😢", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-          transition: Bounce,
-        });
+        toast.error("Не удалось загрузить товары 😢");
         setLoading(false);
       });
   }, []);
 
-  const filteredProducts = products.filter((p) =>
-    p.title.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const filteredProducts = products.filter((p) => {
+    const localized = localizeProduct(p, lang);
+    return localized.title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   return (
     <div className="home">
@@ -56,15 +47,10 @@ function Home() {
       ) : (
         <div className="home__grid">
           {filteredProducts.map((p) => (
-            <ProductCard key={p.id} product={p} onClick={setSelectedProduct} />
+            <ProductCard key={p.id} product={p} />
           ))}
         </div>
       )}
-
-      <ProductModal
-        product={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
-      />
     </div>
   );
 }

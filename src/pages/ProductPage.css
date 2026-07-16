@@ -1,0 +1,120 @@
+.product-page__status {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-gray);
+}
+
+.product-page__back {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.product-page__back:hover {
+  color: var(--violet);
+}
+
+.product-page__content {
+  display: flex;
+  gap: 40px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.product-page__image-box {
+  flex-shrink: 0;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  border-radius: 12px;
+}
+
+.product-page__image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.product-page__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-page__category {
+  font-size: 12px;
+  color: var(--violet);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.product-page__title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.product-page__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text-gray);
+  margin-bottom: 18px;
+}
+
+.product-page__description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-bottom: 24px;
+}
+
+.product-page__price-box {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.product-page__price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.product-page__order-btn {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  background: var(--violet);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    background 0.2s;
+}
+
+.product-page__order-btn:hover {
+  background: var(--violet-light);
+}
+
+.product-page__order-btn--pressed {
+  transform: scale(0.92);
+  background: var(--violet-light);
+}
+
+@media (max-width: 640px) {
+  .product-page__content {
+    flex-direction: column;
+  }
+
+  .product-page__image-box {
+    width: 100%;
+  }
+}

@@ -8,32 +8,30 @@ function Footer() {
     <footer className="footer">
       <div className="footer__columns">
         <div className="footer__col">
-          <h4>О нас</h4>
-          <p>Мы не настоящий Uzum</p>
-          <p>Вакансии: разработчик, который умрет в CSS в 3 ночи</p>
+          <h4>{t("footer_about_title")}</h4>
+          <p>{t("footer_about_1")}</p>
+          <p>{t("footer_about_2")}</p>
         </div>
         <div className="footer__col">
-          <h4>Для покупателей</h4>
-          <p>Связаться с нами (не связывайтесь)</p>
-          <p>Вопрос-ответ: да, это фейк</p>
+          <h4>{t("footer_users_title")}</h4>
+          <p>{t("footer_users_1")}</p>
+          <p>{t("footer_users_2")}</p>
         </div>
         <div className="footer__col">
-          <h4>Для продавцов</h4>
-          <p>Продавайте у нас (тут нет бэкенда)</p>
-          <p>Кабинет продавца: coming never</p>
+          <h4>{t("footer_sellers_title")}</h4>
+          <p>{t("footer_sellers_1")}</p>
+          <p>{t("footer_sellers_2")}</p>
         </div>
         <div className="footer__col">
-          <h4>Скачать приложение</h4>
-          <p>📱 AppStore (не работает)</p>
-          <p>🤖 Google Play (тоже не работает)</p>
+          <h4>{t("footer_app_title")}</h4>
+          <p>{t("footer_app_1")}</p>
+          <p>{t("footer_app_2")}</p>
         </div>
       </div>
 
       <div className="footer__bottom">
         <p>© 2026 Not Real Uzum. {t("footer_rights")}.</p>
-        <p className="footer__joke">
-          Сделано на React, и полном отсутствии сна ☕💜
-        </p>
+        <p className="footer__joke">{t("footer_joke")}</p>
       </div>
     </footer>
   );

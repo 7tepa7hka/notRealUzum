@@ -20,6 +20,30 @@ const slides = [
     emoji: "🚀",
     gradient: "linear-gradient(135deg, #4c1d95, #6b21e8)",
   },
+  {
+    title: "Чёрная пятница каждый день",
+    text: "Ну почти. Иногда. Может быть",
+    emoji: "🛍️",
+    gradient: "linear-gradient(135deg, #1e1e28, #4c1d95)",
+  },
+  {
+    title: "Электроника без переплат",
+    text: "Ноутбуки, мониторы и SSD по адекватным ценам",
+    emoji: "💻",
+    gradient: "linear-gradient(135deg, #6b21e8, #4c1d95)",
+  },
+  {
+    title: "Подарки для друзей-программистов",
+    text: "Кружки, футболки и мемные наклейки",
+    emoji: "🎁",
+    gradient: "linear-gradient(135deg, #8b3ff0, #6b21e8)",
+  },
+  {
+    title: "Ювелирка со скидкой",
+    text: "Кольца, браслеты и другие блестяшки",
+    emoji: "💎",
+    gradient: "linear-gradient(135deg, #b565f5, #6b21e8)",
+  },
 ];
 
 function Banner() {
@@ -39,7 +63,15 @@ function Banner() {
   return (
     <div className="banner">
       <button className="banner__arrow banner__arrow--left" onClick={prev}>
-        ‹
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
+          <path
+            d="M9 1L2 8L9 15"
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </button>
 
       <div
@@ -54,7 +86,15 @@ function Banner() {
       </div>
 
       <button className="banner__arrow banner__arrow--right" onClick={next}>
-        ›
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
+          <path
+            d="M1 1L8 8L1 15"
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </button>
 
       <div className="banner__dots">

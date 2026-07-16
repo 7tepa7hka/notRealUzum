@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import ProductCard from "../components/ProductCard";
-import ProductModal from "../components/Productmodal.jsx";
 import { getAllProducts } from "../utils/getProducts.js";
 import "./Catalog.css";
 
@@ -10,7 +9,8 @@ function Catalog() {
   const [categories, setCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState("all");
   const [loading, setLoading] = useState(true);
-  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  productCard;
 
   useEffect(() => {
     getAllProducts()
@@ -70,15 +70,10 @@ function Catalog() {
       ) : (
         <div className="catalog__grid">
           {filteredProducts.map((p) => (
-            <ProductCard key={p.id} product={p} onClick={setSelectedProduct} />
+            <ProductCard key={p.id} product={p} />
           ))}
         </div>
       )}
-
-      <ProductModal
-        product={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
-      />
     </div>
   );
 }
